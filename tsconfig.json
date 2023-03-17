@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false, //未引用报错开关
+    "noImplicitThis": false, //this 必须有引用地址
+    "diagnostics": true, //诊断
+    "declaration": true,
+    "declarationDir": ".",
+    "listFiles": true,
+    "pretty": false,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "stripInternal": false,
+    "target": "ES5",
+    // "typeRoots": ["./node_modules/@types", "./typings"],
+    // "types": ["resolve"],
+    // "outDir": "dist",
+    "lib": [
+      "es5",
+      "es2015.iterable",
+      "es2015.collection",
+      "es2015.promise",
+      "es2015.symbol",
+      "es2015.symbol.wellknown",
+      "dom"
+    ]
+  },
+  "formatCodeOptions": {
+    "indentSize": 2,
+    "tabSize": 2
+  },
+  "include": ["src/**/*", "index.d.ts"],
+  "exclude": ["dist"],
+  "bazelOptions": {
+    "suppressTsconfigOverrideWarnings": true
+  },
+  "baseUrl": "./",
+  "paths": {
+    "@/*": ["src/*"]
+  }
+}
